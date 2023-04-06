@@ -224,7 +224,7 @@ var progress_on = false;
                             <a href="messaging.html" ><i></i>Messaging</a>
                         </li>
                                                                                                                                     <li class="dropdown dd-1 ">
-                            <a href="chatbot.html" ><i></i>Chatbot</a>
+                            <a href="index.html" ><i></i>Chatbot</a>
                         </li>                    
 																	
 				<!-- <li class="glyphs">
@@ -366,15 +366,36 @@ var progress_on = false;
 </ul>
  -->
 
- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
- <df-messenger
-		intent="WELCOME"
-		background-color="green"
-		chat-title="Felix - Bot"
-		agent-id="a2330ac2-c4c5-4ecb-b412-c4b97b19cdb8"
-		language-code="en"
-		chat-icon="https://png2.cleanpng.com/sh/23263226ddbb622e1c5ba29840b2b35a/L0KzQYm3VcA0N6pmj5H0aYP2gLBuTgBpd5Zzgeo2ZHXmcb20jPVobZ9peeRELXP1dbL7lgJmNZRmip9sbHnzPbL5lL1xcJDqhttDLUXkdbO9gBMxPWg9SdUCLka2Q4K4WcM0OWY3TaUCOEK3QIS8WMQveJ9s/kisspng-phoenix-decal-legendary-creature-car-clip-art-phoenix-5aeb6cc05781c7.6331193315253782403584.png"
-	></df-messenger>
+<!-- Messenger Chat plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "117929274594461");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v16.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
  
 <ul class="breadcrumb">
 	<li>You are here</li>

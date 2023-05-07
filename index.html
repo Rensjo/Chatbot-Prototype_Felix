@@ -73,10 +73,10 @@
             }
             .dropdown-menu{
                 width: min-content !important;
-                background-color: #550000 !important;
+                background-color: #501515 !important;
             }
             .navbar.main {
-                background-color: red !important; 
+                color: red !important; 
             }
 
         </style>
@@ -88,7 +88,7 @@
             height: 630px;
             margin: auto;
             margin-top: 50px;
-            background-color: #475B5A;
+            background-color: #4a414b;
             border-radius: 25px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
             padding: 20px;
@@ -170,14 +170,173 @@
             <Style>
                 df-messenger {
                     --df-messenger-button-titlebar-color: #53544f;
-                    --df-messenger-chat-background-color: #b5cbca;
-                    --df-messenger-bot-message:#9bb0af;
+                    --df-messenger-chat-background-color: #9bb0af;
+                    --df-messenger-bot-message:#c0dec8;
                     --df-messenger-send-icon: #475B5A;
                     --df-messenger-border-radius: 20px;
                     
                 }
             </Style>
-	    
+            
+            <style>
+                html.sidebar-full #menu .appbrand {
+                        border-bottom: 1px solid #3E363F !important;
+                        background: #3E363F !important;
+                        font-size: 14px !important;
+                        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+                        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+                        -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+                        -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);    
+                }
+
+                html.sidebar-full #menu .slim-scroll, html.sidebar-full #menu .slimScrollDiv {
+                        overflow: visible !important;
+                        background: #3E363F !important;
+                        
+                }
+
+                html.sidebar-full #menu .slim-scroll>ul>li.active>a, html.sidebar-full #menu>ul>li.active>a, html.sidebar-full #menu .slim-scroll>ul>li:hover>a, html.sidebar-full #menu>ul>li:hover>a, html.sidebar-full #menu .slim-scroll>ul>li.open>a, html.sidebar-full #menu>ul>li.open>a {
+                        background: #53544f !important;
+                        border: 1px solid #363f36 !important;
+                }
+
+                html.top-full .navbar.main .btn-navbar {
+                        background: #4a414b !important;
+                }
+
+                html.top-full .navbar.main .btn-navbar:hover {
+                        background: #53544f !important;
+                        
+                }
+                
+                html.sidebar-full #menu .profile {
+                        border-top: 1px solid #53544f !important;
+                        background: #53544f !important;
+                        
+                }
+
+                html.top-full .navbar.main .topnav>li.active>a, html.top-full .navbar.main .topnav>li:hover>a, html.top-full .navbar.main .topnav>li.open>a {
+                        background: #53544f !important;
+                        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+                        -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+                        -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+                        border: 1px solid #3E363F;
+                        
+                }
+
+                html.sidebar-full #menu .slim-scroll>ul>li>a, html.sidebar-full #menu>ul>li>a {
+                        display: block;
+                        color: #ffffff;
+                        text-decoration: none;
+                        padding: 0 8px;
+                        line-height: 39px;
+                        border:#363f36;
+                        
+                }
+
+                #menu .appbrand p:last-child {
+                        font-size: 0.75em;
+                        line-height: 1.1;
+                        color:#ffffff;
+                        
+                }
+
+                #menu .appbrand p:first-child {
+                        margin: 0;
+                        color:#ffffff;
+                        
+                }
+
+                .clearfix {
+                        *zoom: 1;
+                        background:#4a414b;
+                        border-top: 1px solid #4a414b !important;
+                        border-bottom: 1px solid #3E363F !important;
+                }
+
+                html.top-full .navbar.main .topnav {
+                        border-left: 1px solid #3E363F !important;
+                        border-right: 1px solid #3E363F !important;
+                       
+                }
+
+                .navbar.main .topnav {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        border-left: 1px solid #3E363F !important;
+                        border-right: 1px solid #3E363F !important;
+                }
+
+                html.sidebar-full #menu .slim-scroll>ul, html.sidebar-full #menu>ul {
+                        border-top: 1px solid #3E363F !important;
+                        border-bottom: 1px solid #3E363F !important;
+                        
+                }
+
+                html.top-full .navbar.main .topnav>li>a.glyphicons.logout span {
+                        padding: 0 8px 0 0;
+                        float: left;
+                        color:#ffffff
+                        
+
+                }
+
+                html.top-full .navbar.main .topnav>li>a {
+                        display: block;
+                        color: #ffffff;
+                        text-decoration: none;
+                        padding: 1px 11px 0 9px;
+                        line-height: 50px;
+                        
+                }
+
+                html.top-full .navbar.main .topnav:last-of-type li:last-child {
+                        border-left: 1px solid #4a414b !important;
+                        border-right: 1px solid #4a414b !important;
+                        background: #4a414b
+                }
+
+                html.top-full .navbar.main .topnav>li:last-child {
+                        border-right: 1px solid #4a414b !important;
+                        border-left: 1px solid #4a414b !important;
+                        background: #4a414b
+                }
+
+                html.top-full .navbar.main .topnav>li:first-child {
+                        border-right: 1px solid #4a414b !important;
+                        border-left: 1px solid #4a414b !important;
+                        background: #4a414b
+                }
+
+                html.top-full .navbar.main .topnav:last-of-type {
+                        border-right: none;
+                        border-right: 1px solid #4a414b !important;
+                        border-left: 1px solid #4a414b !important;
+                        background:#4a414b
+                }
+
+                html.sidebar-full #menu .slim-scroll>ul>li:last-child, html.sidebar-full #menu>ul>li:last-child {
+                        border-bottom: 1px solid #3E363F;
+                        border-top: 1px solid #3E363F;
+                        background:#3E363F;
+                }
+
+                html.sidebar-full #menu .slim-scroll>ul>li:first-child, html.sidebar-full #menu>ul>li:first-child {
+                        border-top: 1px solid #3E363F !important;
+                }
+
+                html.sidebar-full #menu {
+                        background: #3E363F;
+                        background: linear-gradient(173deg, rgba(62, 54, 63, 1) 0%, rgba(62, 54, 63, 1) 65%, rgb(0, 69, 46) 100%);
+                }
+
+                html.top-full .navbar.main .topnav>li.active:last-child, html.top-full .navbar.main .topnav>li:hover:last-child, html.top-full .navbar.main .topnav>li.open:last-child {
+                        padding: 8px 9px 8px 8px;
+                        border-left: 1px solid #541f15;
+
+                }
+            </style>
 	 
 	    
         </head>
@@ -203,7 +362,7 @@
     
                 <!-- Brand -->
                 <a href="https://sis.fatima.edu.ph" class="appbrand">
-                    <p>A  I  M  S  v  2.0</p>
+                    <p>A  I  M  S  v  3.0</p>
                     <p>Academic Information Management System</p>
                 </a>
                 <!-- Scrollable menu wrapper with Maximum height -->
@@ -212,8 +371,8 @@
         <!-- Sidebar Profile -->
         <span class="profile center separator bottom">
         
-                <img src="https://sis.fatima.edu.ph/assets/images/olfu-logo-png.png" width='162px'/>
-            <p style="color: #00FF00; margin-top: 5px; font-size: 16px; font-weight: bold;">Valenzuela</p>
+                <img src="https://i.imgur.com/fXNyfsm.jpg" width='162px'/>
+            <p style="color: #eda575; margin-top: 5px; font-size: 16px; font-weight: bold;">Felix Prototype</p>
                 
             
         </span>
